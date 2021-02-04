@@ -4,11 +4,11 @@ export interface Option {
   [key: string]: any
 }
 
-export interface SelectSearchProps {
+export interface DropdownSelectProps {
   options: Option[];
   searchKeys: string[];
   valueKey?: string;
   render?: (option: Option) => ReactNode;
 }
 
-export const SelectSearch: React.FC<SelectSearchProps>;
+export const DropdownSelect: React.FC<DropdownSelectProps>;
