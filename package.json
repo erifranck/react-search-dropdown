@@ -2,6 +2,9 @@
   "name": "react-select-search-dropdown",
   "version": "0.1.1",
   "private": false,
+  "module": "src/index.ts",
+  "main": "src/index.ts",
+  "types": "index.d.ts",
   "dependencies": {
     "fuse.js": "^6.4.6",
     "react": "^17.0.1",
