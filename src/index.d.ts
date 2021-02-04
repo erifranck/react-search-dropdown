@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 
 export interface Option {
   [key: string]: any
