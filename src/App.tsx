@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+import { DropdownSelect } from 'components/DropdownSelect/DropdownSelect';
 import './App.css';
+
+const dropdownOptions = [
+  {
+    name: 'erifranck',
+    value: '3053378798'
+  },
+  {
+    name: 'julio',
+    value: '3053019182'
+  },
+  {
+    name: 'kleydith',
+    value: '3030201223'
+  },
+  {
+    name: 'anthoner',
+    value: '30530111823'
+  }
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DropdownSelect
+        options={dropdownOptions}
+        searchKeys={['name', 'value']}
+      />
     </div>
   );
 }
